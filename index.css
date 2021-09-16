@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {              /* Константный параметр */
+    padding: 0;
+    margin: 0;
+}
+
+a { 
+    text-decoration: none; /* Избавление от браузерной декорации ссылок */
+}
+
+li {
+    list-style: none; /* Избавление от стилизации элемента списка */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Добавелние шрифта в тело сайта (Применение для всего) */
+
+}
+
+header {
+    width: 100%; /* Установка 100%-й ширина шапки вебсайта */
+    background: #000; /* Цвет background'a */
+    display: flex; /* Параметр отображения */
+}
+
+.header__logo {
+    text-transform: uppercase; /* Установка регистра символов, к примеру ЗАГЛАВНЫЕ, маленькие строчные */
+    color: #fff; /* Установка белого цвета */
+    font-weight: 800; /* Установка жирности шрифта */
+    font-size: 24px; /* Установка размера шрифта */
+    cursor: pointer; /* Установка курсора при наводе на элемент */
+    margin-top: 56px; /* Отступ от края 56px */
+    margin-left: 12%; /* Отстут от левого края 12% */
+}
+
+nav {
+    margin-top: 56px; /* Уравнение отступа к header__logo */
+    margin-left: 29%; /* Отступ от левого края  / был 29*/
+
+}
+
+.topnav a {
+    color: #fff; /*Установка цвета */
+   text-align: center; /* Параметр центрирования элемента */
+   padding: 12px 16px; /* Внутренний отступ элементов друг от друга */
+   font-size: 14px; /* Установка размера шрифта */
+   font-weight: bold; /* Загуглить */
+}
+
+.topnav a:hover {
+    border-bottom: 3px solid #fcac45; /* Hover эффект, подчёркивающий ссылку при наводе */
+}
+
+.topnav .icon{ 
+    display: none; /* Убрать отображение иконки меню */
+}
+
+@media screen and (max-width:1060px ) {
+    nav{
+        margin-left: 10% ;
+    }
+}
+
+@media screen and (max-width:1200px ) {
+    nav{
+        margin-left: 20% ;
+    }
+}
+
+@media screen and (max-width: 1010px) { /* Ширина страницы от которой сайт начинает плыть */
+    .topnav a {
+        display: none;
+    }
+
+    .topnav .icon { /* Вообще непонятный код, который надо гуглить */
+        float: right;
+        margin-top: -17px;
+        color: white;
+        display: block;
+        font-size: 24px;
+
+    }
+
+    nav{
+        width: 100%; /* Стилизация нава, смещение иконки вправо */
+    }
+
+    .topnav.responsive {
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+
+    header .topnav.responsive{
+        height: 340px;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        top: -50px;
+        right: -200px;
+
+    }
+
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+        color: white;
+    }
+}
