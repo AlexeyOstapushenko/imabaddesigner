@@ -56,7 +56,7 @@ nav {
     display: none; /* Убрать отображение иконки меню */
 }
 
-@media screen and (max-width:1060px ) {
+@media screen and (max-width:1102px ) {
     nav{
         margin-left: 10% ;
     }
@@ -68,7 +68,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 1010px) { /* Ширина страницы от которой сайт начинает плыть */
+@media screen and (max-width: 1102px) { /* Ширина страницы от которой сайт начинает плыть */
     .topnav a {
         display: none;
     }
