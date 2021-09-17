@@ -50,6 +50,7 @@ nav {
 
 .topnav a:hover {
     border-bottom: 2px solid darkorange; /* Hover эффект, подчёркивающий ссылку при наводе */
+    color: #999999;
 }
 
 .topnav .icon{ 
@@ -112,7 +113,7 @@ nav {
 }
 
 
-main {
+main { /* Настройки основных блоков веб-страницы */
     display: flex; /* Объявление о работе с flex-box'ами */
     flex-direction: column; /* Отображение flex-box'ов в колонке */ /* Вертикальное расположение */
     width: 100%;
@@ -125,16 +126,26 @@ main .main__welcome { /* Настройка div'a с приветствующи�
 
 }
 
-main .main__welcome p {
+main .main__welcome p { /* Настройка параграфной части div'a */
     color: #999999;
     font-size: 20px;
 }
 
-main .main__welcome h1 {
+main .main__welcome h1 { /* Настройка заголовка div'a */
     color: #999999;
     font-size: 44px;
 }
 
-.mycompany {
+main .main__welcome h1:hover { /* Настройка hover'a заголовка */
+    transition: 1s;
+    color: aquamarine;
+}
+
+main .main__welcome p:hover { /* Настройка hover'а параграфа */
+    transition: 1s; 
+    color: white;
+}
+
+.mycompany { /* Настройка отдельного span'a этого div'a */
     color: #fcac45;
 }
