@@ -34,6 +34,12 @@ header {
     margin-left: 12%; /* Отстут от левого края 12% */
 }
 
+.header__logo:hover{
+    color: #999999;
+    cursor: pointer;
+    transition: 1s;
+}
+
 nav {
     margin-top: 56px; /* Уравнение отступа к header__logo */
     margin-left: 29%; /* Отступ от левого края  / был 29*/
@@ -117,6 +123,7 @@ main { /* Настройки основных блоков веб-страниц
     display: flex; /* Объявление о работе с flex-box'ами */
     flex-direction: column; /* Отображение flex-box'ов в колонке */ /* Вертикальное расположение */
     width: 100%;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
 }
 
 main .main__welcome { /* Настройка div'a с приветствующим текстом */
@@ -148,4 +155,26 @@ main .main__welcome p:hover { /* Настройка hover'а параграфа 
 
 .mycompany { /* Настройка отдельного span'a этого div'a */
     color: #fcac45;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+main .main__about {
+    display: flex;
+    text-align: center;
+}
+
+.about__right h1{
+    display: inline-block;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+}
+
+.about__right p{
+    margin: 30px 0 50px 0;
+    color: #6c6c6c;
 }
