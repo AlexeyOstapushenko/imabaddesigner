@@ -131,6 +131,7 @@ main .main__welcome { /* Настройка div'a с приветствующи�
     text-align: center;
     padding: 200px 0 410px 0; /* Вечно непонятные padding'и */
 
+
 }
 
 main .main__welcome p { /* Настройка параграфной части div'a */
@@ -177,4 +178,25 @@ main .main__about {
 .about__right p{
     margin: 30px 0 50px 0;
     color: #6c6c6c;
+}
+
+main .main__contacts {
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+.main__contacts .contacts_h {
+    padding: 20px 0;
+}
+
+.main__contacts img{
+    display: flex;
+    margin-left: 12%;
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+.main__images {
+    margin: 0 auto;
+    width: 100%;
 }
